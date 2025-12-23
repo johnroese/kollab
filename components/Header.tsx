@@ -33,7 +33,7 @@ const Header: React.FC = () => {
              <span className="text-[#FF8C00] font-black text-xl">K</span>
           </div>
           <span className={`text-2xl font-bold ${isScrolled ? 'text-[#003366]' : 'text-[#003366]'}`}>
-            Kollab<span className="text-[#FF8C00]">Tecnologia</span>
+            Kollab<span className="text-[#FF8C00]"> Tecnologia</span>
           </span>
         </div>
 
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
             </a>
           ))}
           <a 
-            href="https://wa.me/5500000000000" 
+            href="https://wa.me/5599991888485" 
             target="_blank"
             className="bg-[#FF8C00] hover:bg-[#e67e00] text-white px-5 py-2.5 rounded-full font-semibold flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg"
           >
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
             </a>
           ))}
           <a 
-            href="https://wa.me/5500000000000" 
+            href="https://wa.me/5599991888485" 
             className="bg-[#FF8C00] text-white text-center py-3 rounded-lg font-bold"
           >
             Abrir WhatsApp

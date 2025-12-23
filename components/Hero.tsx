@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=80&w=2000&auto=format&fit=crop')` }}
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=2000&auto=format&fit=crop')` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#003366]/90 to-[#003366]/40" />
       </div>

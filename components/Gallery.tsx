@@ -3,10 +3,10 @@ import React from 'react';
 
 const Gallery: React.FC = () => {
   const photos = [
-    { src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&auto=format&fit=crop', title: 'Data Center Setup' },
-    { src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=80&w=600&auto=format&fit=crop', title: 'Structured Cabling' },
-    { src: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop', title: 'Network Rack Management' },
-    { src: 'https://images.unsplash.com/photo-1520867014606-fe319abe9781?q=80&w=600&auto=format&fit=crop', title: 'WiFi Hotspots Installation' },
+    { src: 'https://images.unsplash.com/photo-1506399309177-3b43e99fead2?q=80&w=600&auto=format&fit=crop', title: 'Data Center' },
+    { src: 'https://images.unsplash.com/photo-1698668975271-2ba9a323be6b?q=80&w=600&auto=format&fit=crop', title: 'Cabeamento Estruturado' },
+    { src: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop', title: 'Gerenciamento de Rede' },
+    { src: 'https://images.unsplash.com/photo-1531765408077-9a1f85f90df1?q=80&w=600&auto=format&fit=crop', title: 'Instalação de Hotspots Wi-Fi' },
   ];
 
   return (
