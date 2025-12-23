@@ -33,7 +33,7 @@ const Header: React.FC = () => {
              <span className="text-[#FF8C00] font-black text-xl">K</span>
           </div>
           <span className={`text-2xl font-bold ${isScrolled ? 'text-[#003366]' : 'text-[#003366]'}`}>
-            Kollab<span className="text-[#FF8C00]">Tecnologia</span>
+            Kollab<span className="text-[#FF8C00]">Tecnologiaa</span>
           </span>
         </div>
 
