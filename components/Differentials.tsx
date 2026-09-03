@@ -13,7 +13,7 @@ const Differentials: React.FC = () => (
   <section className="section differentials" id="diferenciais">
     <div className="site-container differentials__grid">
       <div className="differentials__visual">
-        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=85&w=1200&auto=format&fit=crop" alt="Equipamentos de rede organizados em data center" loading="lazy" />
+        <img src="/images/redes.jpg" alt="Equipamentos de rede organizados em data center" loading="lazy" />
         <div className="experience-card"><strong>15+</strong><span>anos de experiência em tecnologia</span></div>
         <div className="visual-tag"><i /> Infraestrutura preparada para evoluir</div>
       </div>

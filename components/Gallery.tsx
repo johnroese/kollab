@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import SectionHeading from './SectionHeading';
 
 const projects = [
-  { src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=85&w=1200&auto=format&fit=crop', title: 'Infraestrutura de rede', label: 'Planejamento e organização' },
-  { src: 'https://images.unsplash.com/photo-1698668975271-2ba9a323be6b?q=85&w=1200&auto=format&fit=crop', title: 'Cabeamento estruturado', label: 'Conectividade física' },
-  { src: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=85&w=1200&auto=format&fit=crop', title: 'Segurança e gestão', label: 'Proteção do ambiente' },
+  { src: '/images/hero-infraestrutura.jpg', title: 'Infraestrutura de rede', label: 'Planejamento e organização' },
+  { src: '/images/cabeamento.jpg', title: 'Cabeamento estruturado', label: 'Conectividade física' },
+  { src: '/images/seguranca.jpg', title: 'Segurança e gestão', label: 'Proteção do ambiente' },
 ];
 
 const Gallery: React.FC = () => (

@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
               <span className="tech-panel__status"><i /> Soluções integradas</span>
             </div>
             <div className="tech-panel__image">
-              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=85&w=1200&auto=format&fit=crop" alt="Infraestrutura profissional de servidores e redes" />
+              <img src="/images/hero-infraestrutura.jpg" alt="Infraestrutura profissional de servidores e redes" />
               <div className="tech-panel__overlay">
                 <span><Network aria-hidden="true" /> Infraestrutura</span>
                 <span><Wifi aria-hidden="true" /> Redes corporativas</span>
