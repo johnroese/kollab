@@ -24,7 +24,7 @@ const setMeta = (selector: string, value: string) => {
   document.querySelector<HTMLMetaElement>(selector)?.setAttribute('content', value);
 };
 
-const siteOrigin = 'https://kollab-tecnologia.breezy-curry-6589.chatgpt.site';
+const siteOrigin = 'https://kollab-tecnologia.jhonroese.chatgpt.site';
 
 const DocumentMeta = () => {
   const { pathname } = useLocation();
