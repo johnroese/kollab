@@ -1,6 +1,5 @@
 import React from 'react';
 import { Check, HelpCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import PageHero from '../components/PageHero';
 import SectionHeading from '../components/SectionHeading';
 import CallToAction from '../components/CallToAction';
@@ -31,7 +30,6 @@ const Solutions: React.FC = () => (
               <h2>{title}</h2>
               <p>{description}</p>
               <ul>{items.map((item) => <li key={item}><Check aria-hidden="true" /> {item}</li>)}</ul>
-              <Link to="/contato" state={{ service: title }}>Quero falar sobre esta solução</Link>
             </article>
           ))}
         </div>

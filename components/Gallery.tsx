@@ -14,7 +14,7 @@ const Gallery: React.FC = () => (
     <div className="site-container">
       <div className="section-heading-row">
         <SectionHeading eyebrow="Soluções em ação" title="Estrutura, organização e confiabilidade em cada entrega" />
-        <Link className="text-link text-link--light" to="/contato">Planejar meu projeto <ArrowUpRight size={18} aria-hidden="true" /></Link>
+        <Link className="text-link text-link--light" to="/solucoes">Ver todas as soluções <ArrowUpRight size={18} aria-hidden="true" /></Link>
       </div>
       <div className="work-grid">
         {projects.map((project, index) => (

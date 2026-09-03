@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MapPin, Menu, MessageCircle, Phone, X } from 'lucide-react';
+import { MapPin, Menu, Phone, X } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const navigation = [
@@ -60,14 +60,6 @@ const Header: React.FC = () => {
                 {item.label}
               </NavLink>
             ))}
-            <a
-              href="https://wa.me/5599991888485?text=Olá%2C%20gostaria%20de%20solicitar%20um%20diagnóstico%20de%20TI."
-              target="_blank"
-              rel="noreferrer"
-              className="site-button site-button--compact"
-            >
-              <MessageCircle size={18} aria-hidden="true" /> Solicitar diagnóstico
-            </a>
           </nav>
 
           <button
@@ -87,14 +79,6 @@ const Header: React.FC = () => {
             {navigation.map((item) => (
               <NavLink key={item.to} to={item.to} end={item.to === '/'}>{item.label}</NavLink>
             ))}
-            <a
-              href="https://wa.me/5599991888485?text=Olá%2C%20gostaria%20de%20solicitar%20um%20diagnóstico%20de%20TI."
-              target="_blank"
-              rel="noreferrer"
-              className="site-button"
-            >
-              Falar com especialista
-            </a>
           </nav>
         </div>
       </header>

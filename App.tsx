@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import WhatsAppFloat from './components/WhatsAppFloat';
 import DocumentMeta from './components/DocumentMeta';
 import Home from './pages/Home';
 import Solutions from './pages/Solutions';
@@ -28,7 +27,6 @@ const App: React.FC = () => {
         </Routes>
       </main>
       <Footer />
-      <WhatsAppFloat />
     </div>
   );
 };

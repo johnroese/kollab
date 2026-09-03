@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight, CheckCircle2, Network, ShieldCheck, Wifi } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -15,9 +16,9 @@ const Hero: React.FC = () => {
             Projetamos e cuidamos da infraestrutura de TI da sua empresa para que sua equipe trabalhe com mais segurança, estabilidade e produtividade.
           </p>
           <div className="brand-hero__actions">
-            <a className="site-button" href="https://wa.me/5599991888485?text=Olá%2C%20gostaria%20de%20solicitar%20um%20diagnóstico%20de%20TI." target="_blank" rel="noreferrer">
-              Falar com especialista <ArrowRight size={19} aria-hidden="true" />
-            </a>
+            <Link className="site-button" to="/contato">
+              Solicitar diagnóstico <ArrowRight size={19} aria-hidden="true" />
+            </Link>
             <a className="site-button site-button--ghost" href="#servicos">Conhecer soluções</a>
           </div>
           <div className="brand-hero__trust" aria-label="Benefícios">
