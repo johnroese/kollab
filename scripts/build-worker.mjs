@@ -61,7 +61,10 @@ export default {
     let fileName = decodeURIComponent(url.pathname).replace(/^\\/+/, '') || 'index.html';
     let file = files[fileName];
 
-    if (!file && request.method === 'GET' && (request.headers.get('accept') || '').includes('text/html')) {
+    const acceptsHtml = (request.headers.get('accept') || '').includes('text/html');
+    const isApplicationRoute = !fileName.split('/').pop()?.includes('.');
+
+    if (!file && request.method === 'GET' && (acceptsHtml || isApplicationRoute)) {
       fileName = 'index.html';
       file = files[fileName];
     }
