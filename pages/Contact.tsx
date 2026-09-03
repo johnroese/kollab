@@ -53,18 +53,18 @@ const Contact: React.FC = () => {
           <aside>
             <span className="brand-eyebrow"><span /> Fale com a Kollab</span>
             <h2>Atendimento próximo, desde o primeiro contato</h2>
-            <p>Escolha o canal mais conveniente ou envie os detalhes pelo formulário. A mensagem será preparada para o WhatsApp.</p>
+            <p>Escolha o canal mais conveniente ou envie os detalhes pelo formulário para falar diretamente com nosso time.</p>
             <div className="contact-cards">
               <a href="https://wa.me/5599991888485" target="_blank" rel="noreferrer"><MessageCircle aria-hidden="true" /><div><span>WhatsApp</span><strong>(99) 99188-8485</strong></div></a>
               <a href="tel:+5599991888485"><Phone aria-hidden="true" /><div><span>Telefone</span><strong>(99) 99188-8485</strong></div></a>
               <a href="mailto:suporte@kollabtecnologia.com.br"><Mail aria-hidden="true" /><div><span>E-mail</span><strong>suporte@kollabtecnologia.com.br</strong></div></a>
-              <div><MapPin aria-hidden="true" /><div><span>Endereço</span><strong>Sunil II — Açailândia, MA</strong></div></div>
+              <div><MapPin aria-hidden="true" /><div><span>Endereço</span><strong>Rua Tancredo Neves, 06<br />Quadra 10 — Bairro Sunil II<br />Açailândia, MA</strong></div></div>
               <div><Clock3 aria-hidden="true" /><div><span>Atendimento</span><strong>Consulte a disponibilidade do time</strong></div></div>
             </div>
           </aside>
 
           <div className="contact-form-card">
-            <div className="contact-form-card__header"><span>Solicitar atendimento</span><h2>Como podemos ajudar?</h2><p>Preencha os campos abaixo. Você poderá revisar a mensagem antes de enviá-la.</p></div>
+            <div className="contact-form-card__header"><span>Solicitar atendimento</span><h2>Como podemos ajudar?</h2><p>Preencha os campos abaixo e envie sua mensagem diretamente pelo WhatsApp.</p></div>
             <form onSubmit={handleSubmit} noValidate>
               <div className="form-row">
                 <label>Seu nome *<input value={form.name} onChange={(event) => updateField('name', event.target.value)} aria-invalid={Boolean(errors.name)} aria-describedby={errors.name ? 'name-error' : undefined} placeholder="Como podemos chamar você?" />{errors.name && <small id="name-error">{errors.name}</small>}</label>
@@ -75,8 +75,8 @@ const Contact: React.FC = () => {
                 <label>Assunto<select value={form.service} onChange={(event) => updateField('service', event.target.value)}><option value="">Selecione uma solução</option>{services.map((service) => <option key={service.id}>{service.title}</option>)}</select></label>
               </div>
               <label>Conte o que você precisa *<textarea rows={5} value={form.message} onChange={(event) => updateField('message', event.target.value)} aria-invalid={Boolean(errors.message)} aria-describedby={errors.message ? 'message-error' : undefined} placeholder="Descreva sua necessidade, ambiente ou principal desafio." />{errors.message && <small id="message-error">{errors.message}</small>}</label>
-              <button className="site-button" type="submit"><Send size={18} aria-hidden="true" /> Preparar mensagem no WhatsApp</button>
-              {sent && <p className="form-success" role="status"><CheckCircle2 aria-hidden="true" /> Sua mensagem foi preparada em uma nova janela.</p>}
+              <button className="site-button" type="submit"><Send size={18} aria-hidden="true" /> Enviar pelo WhatsApp</button>
+              {sent && <p className="form-success" role="status"><CheckCircle2 aria-hidden="true" /> O WhatsApp foi aberto com sua mensagem.</p>}
             </form>
           </div>
         </div>
