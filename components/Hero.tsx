@@ -1,45 +1,54 @@
 
 import React from 'react';
+import { ArrowRight, CheckCircle2, Network, ShieldCheck, Wifi } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=2000&auto=format&fit=crop')` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-[#003366]/90 to-[#003366]/40" />
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-2xl text-white">
-          <div className="inline-block bg-[#FF8C00] px-4 py-1 rounded-md mb-6 font-bold text-sm uppercase tracking-wider">
-            Tecnologia de Ponta
-          </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-            Conexão estável para negócios que <span className="text-[#FF8C00]">não param.</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed">
-            Especialistas em infraestrutura de rede, cabeamento estruturado e suporte técnico 24/7. 
-            Garantimos a performance que sua empresa precisa para crescer.
+    <div className="brand-hero">
+      <div className="brand-hero__glow brand-hero__glow--blue" />
+      <div className="brand-hero__glow brand-hero__glow--green" />
+      <div className="site-container brand-hero__grid">
+        <div className="brand-hero__content">
+          <span className="brand-eyebrow"><span /> Conectando tecnologia e negócios</span>
+          <h1>Tecnologia que conecta. <strong>Estrutura que faz seu negócio avançar.</strong></h1>
+          <p>
+            Projetamos e cuidamos da infraestrutura de TI da sua empresa para que sua equipe trabalhe com mais segurança, estabilidade e produtividade.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-[#FF8C00] hover:bg-[#e67e00] text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl hover:translate-y-[-2px]">
-              Abrir Chamado
-            </button>
-            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all">
-              Nossos Serviços
-            </button>
+          <div className="brand-hero__actions">
+            <a className="site-button" href="https://wa.me/5599991888485?text=Olá%2C%20gostaria%20de%20solicitar%20um%20diagnóstico%20de%20TI." target="_blank" rel="noreferrer">
+              Falar com especialista <ArrowRight size={19} aria-hidden="true" />
+            </a>
+            <a className="site-button site-button--ghost" href="#servicos">Conhecer soluções</a>
+          </div>
+          <div className="brand-hero__trust" aria-label="Benefícios">
+            <span><CheckCircle2 aria-hidden="true" /> Atendimento empresarial</span>
+            <span><CheckCircle2 aria-hidden="true" /> Projeto sob medida</span>
           </div>
         </div>
-      </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7-7-7" />
-        </svg>
+
+        <div className="brand-hero__visual" aria-label="Soluções integradas de tecnologia">
+          <div className="tech-panel">
+            <div className="tech-panel__top">
+              <div>
+                <span>Ecossistema Kollab</span>
+                <strong>Operação conectada</strong>
+              </div>
+              <span className="tech-panel__status"><i /> Soluções integradas</span>
+            </div>
+            <div className="tech-panel__image">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?q=85&w=1200&auto=format&fit=crop" alt="Infraestrutura profissional de servidores e redes" />
+              <div className="tech-panel__overlay">
+                <span><Network aria-hidden="true" /> Infraestrutura</span>
+                <span><Wifi aria-hidden="true" /> Redes corporativas</span>
+                <span><ShieldCheck aria-hidden="true" /> Suporte e segurança</span>
+              </div>
+            </div>
+            <div className="tech-panel__footer">
+              <span>Da instalação ao suporte contínuo</span>
+              <strong>Uma parceira. Toda a sua TI.</strong>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
